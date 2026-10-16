@@ -1,0 +1,27 @@
+{
+  "name": "eduppt",
+  "version": "1.0.0",
+  "description": "《AI伴我成长》一年级 AI 启蒙课：课件、教案与课堂打印材料",
+  "scripts": {
+    "assets": "NODE_PATH=/opt/node22/lib/node_modules node src/make-assets.js",
+    "build": "node src/build-deck.js",
+    "materials": "NODE_PATH=/opt/node22/lib/node_modules node src/build-materials.js",
+    "all": "npm run assets && npm run build && npm run materials"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjamin-l-bc/eduppt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benjamin-l-bc/eduppt/issues"
+  },
+  "homepage": "https://github.com/benjamin-l-bc/eduppt#readme",
+  "dependencies": {
+    "marked": "^18.1.1",
+    "pptxgenjs": "^4.0.1",
+    "sharp": "^0.35.5"
+  }
+}
